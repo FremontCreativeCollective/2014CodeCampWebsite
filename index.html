@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Summer Tech Series</title>
+        <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >
+        <link rel="stylesheet" type="text/css" href="lib/onepage-scroll.css">
+        <link rel="stylesheet" type="text/css" href="summertechseries.css">
+    </head>
+<body>
+  
+<div class="main">
+    <section id="home" class="plain-bg">
+        <div class="container">
+            <h1>Welcome to the Summer Tech Series</h1>
+            <h2>Learn how to code in 5 days</h2>
+            <p>An intense bootcamp taking place this summer, July 14th - 19th</p>
+            <button type="button" class='btn btn-primary btn-lg' id="register">Get Registered</button>
+            <div class="btn-group">
+                <button type="button" class="btn">Left</button>
+                <button type="button" class="btn">Middle</button>
+                <button type="button" class="btn">Right</button>
+            </div>
+        </div>
+    </section>
+    <section id="what" class="texture-bg">
+        <div class="container">...</div>
+    </section>
+    <section id="when" class="plain-bg">
+        <div class="container">...</div>
+    </section>
+    <section id="why"  class="texture-bg">
+        <div class="container">...</div>
+    </section>
+    <section id="how"  class="plain-bg">
+        <div class="container">...</div>
+    </section>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="lib/onepage-scroll.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".main").onepage_scroll({
+        sectionContainer: "section",     
+        easing: "ease",                  
+        animationTime: 500,             
+        pagination: true,                
+        updateURL: true,                
+        beforeMove: function(index) {},  
+        afterMove: function(index) {},   
+        loop: false,                     
+        keyboard: true,                  
+        responsiveFallback: false        
+    });       
+        
+});
+</script>
+</body>  
+</html>
