@@ -1,4 +1,4 @@
-SummerTechSeries
+Sycamore Code Camp
 ================
 
-Landing page for Summer Tech Series
+Landing and information page for the Sycamore Code Camp

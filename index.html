@@ -2,45 +2,148 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Summer Tech Series</title>
+        <title>Sycamore Code Camp</title>
+        <link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >
         <link rel="stylesheet" type="text/css" href="lib/onepage-scroll.css">
-        <link rel="stylesheet" type="text/css" href="summertechseries.css">
+        <link rel="stylesheet" type="text/css" href="custom.css">
     </head>
 <body>
   
 <div class="main">
-    <section id="home" class="plain-bg">
+    
+    <section id="home">
         <div class="container">
-            <h1>Welcome to the Summer Tech Series</h1>
+            <h1>Welcome to the Sycamore Code Camp</h1>
             <h2>Learn how to code in 5 days</h2>
-            <p>An intense bootcamp taking place this summer, July 14th - 19th</p>
-            <button type="button" class='btn btn-primary btn-lg' id="register">Get Registered</button>
-            <div class="btn-group">
-                <button type="button" class="btn">Left</button>
-                <button type="button" class="btn">Middle</button>
-                <button type="button" class="btn">Right</button>
-            </div>
+            <p>An intense coding bootcamp taking place this summer, July 14th - 19th</p>
+            <button type="button" class='btn btn-success btn-lg' id="register">Get Registered</button>
+            <ul class="subnav" id="mainnav">
+                <li><a href="2">What you'll learn</a></li>
+                <li><a href="3">Why we do this</a></li>
+                <li><a href="4">Who we are</a></li>
+            </ul>
         </div>
     </section>
-    <section id="what" class="texture-bg">
-        <div class="container">...</div>
+
+    <section id="what">
+         <div class="container">
+            <h2>Newbie to 'expert beginner' in 5 days</h2>
+            <p>Becoming an expert programmer takes years of practice. Plan on walking out of the Sycamore Code Camp with a beginners grasp on:</p>
+            <ul class="subnav">
+                <li>Structure of web pages (HTML)</li>
+                <li>Layout and design of the web (CSS)</li>
+                <li>Adding interactivity to your site (Javascript)</li>
+            </ul>
+            <p>This isn't a boring lecture either. You'll be coding your own website in the first few minutes. Asking questions isn't frowned upon, but actually encouraged.</p>
+            <p>The only things you need to bring are a <a href="#" class="tt" data-toggle="tooltip" data-placement="bottom" title="Don't have one? Let us know and we can arrange one for you.">laptop*</a> and a desire to learn. </p>
+        </div>
     </section>
-    <section id="when" class="plain-bg">
-        <div class="container">...</div>
+    
+    <section id="why">
+        <div class="container">
+            <h2>Tens of thousands of jobs are out there waiting</h2>
+            <p>The USA is creating more technology jobs than it can provide skilled labor for. If you're looking at becoming a computer programmer this bootcamp will give you just enough experience to see if coding is the right career path for you.</p>
+            
+            <p>You'll learn basic skills that are applicable to any programming job like</p>
+            <ul class="subnav">
+                <li>when and how to comment your code</li>
+                <li>version control with Git and Github and</li>
+                <li>how to code in a small group</li>
+            </ul>
+            <p>If you just want to understand how the internet works a little more, we can teach you how to become a 'content creator' instead of just a 'content consumer'.</p>
+            <p>We don't want to be babysitters so please make sure you're ready to learn when you walk in the door.</p>
+        </div>
     </section>
-    <section id="why"  class="texture-bg">
-        <div class="container">...</div>
+    
+    <section id="who">
+        <div class="container">
+            <h2>We <3 Fremont</h2>
+            <p><img src="lib/sycamore.png" class="img img-circle sponsors" />Sycamore is a technology company located in Fremont, NE. They love the small town atmosphere that Fremont provides but also want to foster a spirit of entreprenuership and technolgy in the city. Just because Fremont is "rural" doesn't mean it can't have a bunch of code ninjas running around too.</p>
+            <div class="clear" style="height:25px;"></div>
+            <p><img src="lib/fsbt.png" class="img img-circle sponsors" />First State Bank and Trust is the local leader in banking and finance. They have a long history of dedication to educating the great folks of Fremont. They have many regular meetups about new technology through their <a href="http://www.firststatebankandtrust.com/index.cfm/fsbtu" title="FSBTU">FSB&T University</a> and often reach out to local small businesses to provide help and assistance.</p>
+            <p style="margin-top:25px;">We want to do our part to help Fremont's youth explore and embrace technology. </p>
+        </div>
     </section>
-    <section id="how"  class="plain-bg">
-        <div class="container">...</div>
+    
+    <section id="signup">
+        <div class="container">
+            <h2>Ask us a question or register!</h2>
+            
+            <form class="form-horizontal" method="post" action="http://forms.brace.io/info@sycamoreleaf.com">
+            <input type="hidden" name="_next" value="http://www.sycamorecodecamp.com/thanks.html" />
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="name">Name</label>  
+              <div class="col-md-4">
+              <input id="name" name="name" placeholder="Jim Halpert" class="form-control input-md" required="" type="text">
+                
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="_replyto">Email</label>  
+              <div class="col-md-4">
+              <input id="email" name="_replyto" placeholder="jim@dundermifflin.com" class="form-control input-md" required="" type="text">
+                
+              </div>
+            </div>
+            
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="comments">Comments</label>
+              <div class="col-md-4">                     
+                <textarea class="form-control" id="comments" name="comments"></textarea>
+              </div>
+            </div>
+            
+            <!-- Multiple Radios -->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="radios">Time Slot</label>
+              <div class="col-md-4">
+              <div class="radio">
+                <label for="radios-0">
+                  <input name="radios" id="radios-0" value="am" checked="checked" type="radio">
+                  9am to noon
+                </label>
+                    </div>
+              <div class="radio">
+                <label for="radios-1">
+                  <input name="radios" id="radios-1" value="pm" type="radio">
+                  1pm to 4pm
+                </label>
+                    </div>
+              <div class="radio">
+                <label for="radios-2">
+                  <input name="radios" id="radios-2" value="0" type="radio">
+                  Undecided
+                </label>
+                    </div>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="singlebutton"></label>
+              <div class="col-md-4">
+                <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-success">Submit</button>
+              </div>
+            </div>
+            
+            </form>
+
+        </div>
     </section>
 </div>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="lib/onepage-scroll.min.js"></script>
 <script>
 $(document).ready(function(){
+    $('.tt').tooltip();
+    
     $(".main").onepage_scroll({
         sectionContainer: "section",     
         easing: "ease",                  
@@ -54,6 +157,18 @@ $(document).ready(function(){
         responsiveFallback: false        
     });       
         
+    $("#register").click(function(){
+        $(".main").moveTo(5);
+    });
+    
+    $("#mainnav li").click(function(event){
+       event.preventDefault();
+       
+       var target = $(this).find("a").attr("href");
+       console.log(target);
+       
+       $(".main").moveTo(target);
+    });
 });
 </script>
 </body>  
