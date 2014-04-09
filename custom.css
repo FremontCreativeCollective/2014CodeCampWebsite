@@ -1,5 +1,6 @@
 body {
     font-family: 'Maven Pro', sans-serif;
+    background-color: #F1F1F1;
 }
 
 .container {
@@ -57,4 +58,9 @@ form {
     margin-right: 15px;
     border: 1px solid #b0b0b0;
     box-shadow: 3px 3px #e0e0e0;
+}
+
+#thanks {
+    text-align: center;
+    margin-top: 25px;
 }
